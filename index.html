@@ -12,13 +12,17 @@
     <!-- Píxel de Meta: PixelEntreInmobiliarios (2077590176462616), cuenta publicitaria "EntreInmobiliarios | USD", portafolio
          "Gabriel Victorica EntreInmobiliarios" (05/10). PageView al entrar; "Lead" lo manda la página al ver el diagnóstico. -->
     <script>
+      // Solo en el sitio publicado: en la computadora (las pruebas) no se carga, así no le llegan a Meta visitas ni Lead
+      // falsos (06/10, como el de Aura).
+      if (/(^|\.)entreinmobiliarios\.com$/.test(location.hostname)) {
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
       if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
       t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '2077590176462616');
       fbq('track', 'PageView');
+      }
     </script>
-    <script type="module" crossorigin src="./assets/index-Ci65DS_Z.js"></script>
+    <script type="module" crossorigin src="./assets/index-Rn_Pky1A.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CXAgfxFJ.css">
   </head>
   <body>
